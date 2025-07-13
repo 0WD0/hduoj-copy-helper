@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         HDU OJ Copy Helper
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  在 HDU OJ 比赛页面的所有题目内容文本框右上角添加复制按钮
-// @author       _WD_
+// @author       0WD0
+// @homepage     https://github.com/0WD0/hduoj-copy-helper
 // @match        http*://acm.hdu.edu.cn/contest/problem*
 // @match        http*://acm.hdu.edu.cn/showproblem.php*
 // @grant        GM_setClipboard
