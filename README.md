@@ -18,9 +18,16 @@
 - [Violentmonkey](https://violentmonkey.github.io/)
 
 ### 安装步骤
-1. 点击 [hduoj-copy-helper.user.js](./hduoj-copy-helper.user.js) 下载脚本
+
+#### 方法一：直接安装（推荐）
+1. 点击这里安装脚本：[hduoj-copy-helper.user.js](https://raw.githubusercontent.com/0wd0/hduoj-copy-helper/main/hduoj-copy-helper.user.js)
 2. 浏览器会自动识别并提示安装
 3. 在扩展的安装界面点击"安装"
+
+#### 方法二：手动安装
+1. 复制 [hduoj-copy-helper.user.js](./hduoj-copy-helper.user.js) 文件的内容
+2. 在 Tampermonkey 管理面板中点击"添加新脚本"
+3. 粘贴脚本内容并保存
 
 ## 使用方法
 
