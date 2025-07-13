@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         HDU OJ Copy Helper
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @description  在 HDU OJ 比赛页面的所有题目内容文本框右上角添加复制按钮
 // @author       0WD0
 // @homepage     https://github.com/0WD0/hduoj-copy-helper
 // @match        http*://acm.hdu.edu.cn/contest/problem*
-// @match        http*://acm.hdu.edu.cn/showproblem.php*
 // @grant        GM_setClipboard
 // @run-at       document-start
 // @require      https://cdnjs.cloudflare.com/ajax/libs/turndown/7.2.0/turndown.min.js
@@ -172,12 +171,11 @@
     function init() {
         // 先保存原始内容，再添加复制按钮
         saveOriginalContent();
-        addCopyButtons();
-        
         // 延迟一下，等待可能的数学公式渲染完成后再次添加按钮
         setTimeout(() => {
             addCopyButtons();
-        }, 1000);
+        }, 500);
+        addCopyButtons();
     }
     
     if (document.readyState === 'loading') {
